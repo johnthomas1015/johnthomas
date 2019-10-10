@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+<form name ="calculator">
+    <input name="calcWindow" type="text" style="font-size: 175px; text-align: center; color: white; background-color: green " readonly="readonly">
+    <br><br>
+    <div class="num">
+    <table>
+    <tr>
+        <th><button type="button" value="7" onclick="document.calculator.calcWindow.value+=7"><img
+                src="img/Download-7-Number-PNG.png" height="125" width="125"/></button></th>
+        <th><button type="button" value="8" onclick="document.calculator.calcWindow.value+=8"><img
+                src="img/8-Number-PNG.png" height="125" width="125"/></button></th>
+        <th><button type="button" value="9" onclick="document.calculator.calcWindow.value+=9"><img
+                src="img/9-Number-PNG.png" height="125" width="125"/></button></th>
+        <th><button type="button" value="*" onclick="document.calculator.calcWindow.value+='*'"><img
+                src="img/3d-star-emboss.png" height="125" width="150"/></button></th>
+    <tr/>
+        <tr>
+            <th><button type="button" value="4" onclick="document.calculator.calcWindow.value+=4"><img
+                    src="img/Download-4-Number-PNG.png" height="125" width="125"/></button></th>
+            <th><button type="button" value="5" onclick="document.calculator.calcWindow.value+=5"><img src="img/5.png" height="125" width="125"/></button></th>
+            <th><button type="button" value="6" onclick="document.calculator.calcWindow.value+=6"><img
+                    src="img/6-Number-PNG.png" height="125" width="125"/></button></th>
+            <th><button type="button" value="-" onclick="document.calculator.calcWindow.value+='-'"><img
+                    src="img/minus_PNG38.png" height="125" width="125"/></button></th>
+        <tr/>
+        <tr>
+            <th><button type="button" value="1" onclick="document.calculator.calcWindow.value+=1"><img
+                    src="img/1-Number-PNG.png" height="125" width="125"/></button></th>
+            <th><button type="button" value="2" onclick="document.calculator.calcWindow.value+=2"><img
+                    src="img/number-digit-2-png-transparent-images-transparent-backgrounds-2-Number-PNG.png"
+                    height="125" width="125"/></button></th>
+            <th><button type="button" value="3" onclick="document.calculator.calcWindow.value+=3"><img
+                    src="img/Download-3-Number-PNG.png" height="125" width="125"/></button></th>
+            <th><button type="button" value="+" onclick="document.calculator.calcWindow.value+='+'"><img
+                    src="img/christian_cross_PNG14.png" height="125" width="125"/></button></th>
+        <tr/>
+
+    <tr>
+        <th><button tpye="reset" value="reset" ><img src="img/clear-png-3.png" height="125" width="125"/></button></th>
+        <th><button type="button" value="0" onclick="document.calculator.calcWindow.value+=0"><img
+                src="img/number0_PNG19185.png" height="125" width="125"/></button></th>
+        <th><button type="button" value="=" onclick="document.calculator.calcWindow.value=calculate(document.calculator.calcWindow.value)">
+            <img src="img/FewMajorLacewing-max-1mb.gif" height="125" width="125"/></button></th>
+        <th><button type="button" value="/" onclick="document.calculator.calcWindow.value+='/'"><img
+                src="img/slash-146035_960_720.png" height="125" width="125"/></button></th>
+    </tr>
+    </table>
+    </div>
+</form>
+</body>
+</html>
